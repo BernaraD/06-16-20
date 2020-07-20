@@ -22,10 +22,10 @@ function App() {
         setCount(count - 10)
     }
     const addRandom = () => {
-        setCount(count + Math.ceil(Math.random(1, 10)))
+        setCount(count + Math.floor(Math.random() * 10) + 1)
     }
     const minusRandom = () => {
-        setCount(count - Math.ceil(Math.random(1, 10)))
+        setCount(count - Math.floor(Math.random() * 10) - 1)
     }
 
     const reset = () => {
